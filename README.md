@@ -1,13 +1,40 @@
-# PcapSleuth-Project-
-Outil DFIR de détection d'anomalies réseau. Analyse automatisée de fichiers PCAP pour l'identification de menaces (Port Scanning, Brute Force, etc.)
-# PcapSleuth
-Outil de Digital Forensics & Incident Response (DFIR) pour l'analyse de fichiers PCAP.
+# PcapSleuth - Outil d’Analyse Forensique Réseau (DFIR)
 
-## Description
-PcapSleuth est un outil développé pour automatiser la détection d'anomalies dans le trafic réseau. Il permet de parser les fichiers PCAP et d'identifier les comportements suspects.
+## Présentation du projet
+PcapSleuth est un outil développé en Python pour l’analyse forensique des fichiers PCAP.  
+Il permet de détecter des activités suspectes comme le port scanning, d’extraire les informations réseau et de générer des rapports automatiques.
 
-## Fonctionnalités
-- Parsing de fichiers PCAP (via Scapy).
-- Détection automatique d'anomalies (Port Scanning, ...).
-- Génération de rapports d'analyse.
+---
 
+## Objectifs
+- Analyse automatique des fichiers PCAP
+- Extraction des IP, ports, protocoles et hostnames
+- Détection des attaques de type port scanning
+- Génération de rapports et visualisations
+- Support du processus DFIR (Digital Forensics & Incident Response)
+
+---
+
+## Technologies utilisées
+- Python 3
+- Scapy
+- Pandas
+- Matplotlib
+- Wireshark
+- Kali Linux
+- Ubuntu
+- Nmap
+
+---
+ 
+## Structure du projet
+
+```bash
+PcapSleuth-Project/
+│
+├── data/                 # Fichiers PCAP et résultats
+├── src/                  # Code source
+│   └── parser.py
+├── venv/                 # Environnement virtuel
+├── requirements.txt
+└── README.md
